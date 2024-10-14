@@ -1,0 +1,64 @@
+.h-wrapper {
+    justify-content: space-between;
+    color: white;
+    z-index: 99;
+}
+
+.h-container{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.h-menu {
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+.h-menu:hover {
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .h-menu{
+        z-index: 99;
+        color: var(--black);
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        margin-top: 1rem;
+        background: white;
+        flex-direction: column;
+        font-weight: 500;
+        gap: 2rem;
+        padding: 3rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        box-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.05);
+        transition: all 300ms ease-in;
+    }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+    .h-container{
+        display: flex;
+        justify-content: space-between;
+        row-gap: 2rem;
+        font-size: 0.8rem;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 100%;
+        padding-top: 1.5rem;
+        
+    }
+}

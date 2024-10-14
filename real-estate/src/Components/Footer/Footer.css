@@ -1,0 +1,31 @@
+.f-container{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.f-left{
+    gap: 1rem;
+}
+.f-menu{
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+@media (max-width: 768px){
+    .f-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .f-container>div{
+        align-items: center;
+    }
+    .primaryText{
+        margin-bottom: 0.3rem;
+    }
+    .f-menu{
+        font-size: 0.9rem;
+        flex-direction: row;
+    }
+}
